@@ -1,0 +1,311 @@
+body{
+    margin: 0;
+    padding: 2px;
+    overflow-x: hidden;
+    width: 100vw;
+    background-image: url(production\ ID\ 4035859\(1\).mp4);
+    height: 100vh;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.img-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head {
+ background-color: #ffffff;
+}
+
+.menu{
+    
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo{
+    padding: 0%;
+    margin: 0%;
+    width: 100px;
+
+}
+.animation{
+    text-decoration: none;
+    color: black;
+    width: max-content;
+    height: max-content;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 17px;
+    border: 1vw;
+}
+
+.options {
+    width: 55vw;
+    display: flex;
+    opacity: 1;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.animation:hover:after{
+    content: "";
+    background-color: red;
+    height: 2px;
+    display:block;
+    animation: underline;
+    animation-duration: 0.3s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+   
+}
+
+.animation::after{
+    content: " ";
+    height: 2px;
+    display:block;
+    animation: nor;
+    animation-duration: 0.3s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+.search-border{
+    width: 2vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    transition: width 0.8s;
+}
+
+.search-border:hover{
+    width: 13vw;
+}
+
+
+.search-bar{
+    width: 8vw;
+    margin-left : 5px;
+    background-color: whitesmoke;
+    border-radius: 40px;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
+@keyframes underline {
+    from{
+        width: 0;
+    }
+    to{
+        width:100%;
+    }
+}
+@keyframes nor {
+    from{
+        background-color: red;
+        width: 100%;  
+    }
+    to{
+        background-color: red;
+        width: 0%;
+    }
+    
+}
+
+.video{
+   width: 100%;
+   height: auto;
+    position: absolute;
+    z-index: -1;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+ul{
+    padding: 0%;
+}
+
+li{
+    list-style-type: none;
+    color:black;
+    padding: 5px;
+}
+
+
+.explore{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    opacity: 0.8;
+    margin: 2px;
+    width: 80vw;
+    visibility: hidden;
+    z-index: 100;
+    transition: all 0.3s;
+    pointer-events: none;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#explore-main:hover .explore{
+    visibility: visible ;
+}
+
+.explore p{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: orangered;
+    font-weight: 400;
+}
+.explore:hover{
+    visibility: visible;
+    z-index: 100;
+}
+
+li:hover{
+    color: red;
+}
+
+.animation:hover #explore{
+    visibility: visible;
+    z-index: 10;
+}
+
+#experince{
+    background-color: white;
+    visibility: hidden;
+    width: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0.8;
+    align-items: center;
+    transform: translate(45vw,-173%)
+}
+
+#experince ul{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#plan-your-trip{
+    background-color: white;
+    opacity: 0.8;
+    visibility: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    width: 15vw;
+    transform: translate(400%,-405%);
+}
+
+.mp{
+    font-size: 50px;
+    font-weight: bold;
+    max-height: 100px;
+    display: flex;
+    margin-top: -300px;
+    justify-content: center;
+}
+.mp span{
+    margin-left: 30px;
+    color:black;
+    opacity: 1;
+}
+
+#i1{
+    transition: 0.5s ease-in-out;
+}
+#i2{
+    transition: 0.5s ease-in-out;
+}
+
+.mp:hover #i1{
+    margin-top: -30px;
+}
+
+.mp:hover #i2{
+    margin-top: 30px;
+}
+.underline{
+    width: 500px;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.undertext{
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.images{
+    max-width: 500px;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-top: 400px;
+    margin-left: 15px;
+}
+
+.images img{
+    box-shadow: 1px 1px black ;
+}
+
+.ganesh{
+    grid-column-start:2 ;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    animation-name:gan ;
+    animation-duration: 2s;
+    transition: ease-in-out;
+}
+.mountain{
+    grid-row-start:2 ;
+}
+
+.tiranga{
+    grid-column-start:3 ;
+    grid-row-start: 2;
+}
+
+.hover{
+    filter: blur(3px);
+    transition: 0.5s all;
+}
+.hover:hover{
+    filter: blur(0px);
+}
+
+.camp{
+    animation-name: cam;
+    animation-duration: 5s;
+}
+@keyframes cam {
+    from{
+        margin-left: -100%;
+    }
+    to{
+        margin-left: 0;
+    }
+}
