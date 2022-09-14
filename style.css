@@ -269,16 +269,14 @@ li:hover{
 }
 
 .images img{
-    box-shadow: 1px 1px black ;
+    box-shadow: 1px 1px 1px 1px black ;
 }
 
 .ganesh{
     grid-column-start:2 ;
     grid-row-start: 1;
     grid-row-end: 3;
-    animation-name:gan ;
-    animation-duration: 2s;
-    transition: ease-in-out;
+
 }
 .mountain{
     grid-row-start:2 ;
@@ -290,22 +288,67 @@ li:hover{
 }
 
 .hover{
-    filter: blur(3px);
+    filter: grayscale(100%);
     transition: 0.5s all;
 }
 .hover:hover{
-    filter: blur(0px);
+    filter:grayscale(0);
 }
 
-.camp{
-    animation-name: cam;
-    animation-duration: 5s;
+.sub-heading-1{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
-@keyframes cam {
-    from{
-        margin-left: -100%;
-    }
-    to{
-        margin-left: 0;
-    }
+.sub-heading-1 p{
+    font-size: 30px;
+    margin-top: 20px;
 }
+.abc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reasons{
+    width: 90vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.reason-1{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.reason-1 img{
+    width: 600px;
+}
+.reason-1 h3{
+    align-items: center;
+    margin-left: 100px;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(90, 28, 28);
+}
+
+.reason-2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.reason-2 img{
+    width: 600px;
+}
+.reason-2 h3{
+    align-items: center;
+    margin-left: 100px;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(90, 28, 28);
+}
+
